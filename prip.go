@@ -6,13 +6,12 @@ import (
 	"fmt"
 	"net"
 	"os"
-	"strings"
 )
 
 func main() {
 	var ipStr string
 
-	// Check if command-line arguments are provided
+	// Check if input is provided through command-line arguments
 	if len(os.Args) > 1 {
 		ipStr = os.Args[1]
 	} else {
@@ -26,14 +25,14 @@ func main() {
 		}
 	}
 
-	ip := net.ParseIP(strings.TrimSpace(ipStr))
+	ip := net.ParseIP(ipStr)
 	if ip == nil {
 		fmt.Println("Invalid IP address:", ipStr)
 		os.Exit(1)
 	}
 
 	for i := 1; i <= 255; i++ {
-		ip := net.IPv4(ip[12], ip[13], ip[14], byte(i))
-		fmt.Printf("%s/%d\n", ip.String(), i)
+		subnet := fmt.Sprintf("%s/%d", ip.String(), i)
+		fmt.Println(subnet)
 	}
 }
