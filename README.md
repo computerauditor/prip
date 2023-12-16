@@ -6,14 +6,14 @@ A simpe go tool that prints the IP addresses in the range from 1 to 255
 ```
 prip 127.0.0.1
 ```
-![image 1](https://github.com/computerauditor/prip/assets/117805200/28b34952-05bc-41fb-b2b2-b0646107f274)
+![1](https://github.com/computerauditor/prip/assets/117805200/c16e339a-001b-4763-8843-7f14f2498cfd)
 
 ## Or can pipe using
 
 ```
 echo '127.0.0.1' | prip  
 ```
-![image 2](https://github.com/computerauditor/prip/assets/117805200/7cf54123-d65b-4592-aebd-263359515276)
+![2](https://github.com/computerauditor/prip/assets/117805200/ca6ee422-404f-4a17-b5f2-8af3cd6e298d)
 
 ## Installation:
 
