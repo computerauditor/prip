@@ -27,5 +27,5 @@ go build .\prip.go
 Copy/Move to your defalt go path
 
 ```
-mv prip.go \go\bin
+mv prip.exe \go\bin
 ```
